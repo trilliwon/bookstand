@@ -14,7 +14,7 @@ class BookSearchViewModel: ObservableObject {
 
     @Published var documents = Documents()
     @Published var books = [Book]()
-    @Published var query: String = "과학"
+    @Published var query: String = "코스모스"
     @Published var searchTarget: Int = 0
     @Published var currentPage: Int = 1
 

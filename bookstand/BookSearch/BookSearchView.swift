@@ -39,7 +39,7 @@ struct BookSearchView: View {
                         })
                     }
                 }
-                .animation(.spring())
+                .transition(.slide)
                 .resignKeyboardOnDragGesture()
                 .navigationBarTitle(Text("Search"))
             }

@@ -28,7 +28,7 @@ struct SearchBar: View {
                     .font(.subheadline)
                     .onTapGesture {
                         withAnimation {
-                            self.isEditing.toggle()
+                            self.isEditing = true
                         }
                     }
 
@@ -50,7 +50,7 @@ struct SearchBar: View {
                 Button(action: {
                     UIApplication.shared.endEditing(true)
                     withAnimation {
-                        self.isEditing.toggle()
+                        self.isEditing = false
                     }
                     self.text = ""
                 }) {
