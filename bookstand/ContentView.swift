@@ -22,26 +22,6 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-
-            Text("Books")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "book")
-                        Text("Books")
-                    }
-                }
-                .tag(1)
-
-            Text("Search")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "paperclip")
-                        Text("Save")
-                    }
-                }
-                .tag(2)
         }
     }
 }
